@@ -6,4 +6,6 @@ Planned features include:
 * Scheduled video deletion
 * Timestamp and location data embedding
 
+Please note that this project is still in ***very*** early development. 
+
 https://erikcmclaughlin.com
