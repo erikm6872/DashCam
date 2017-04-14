@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.erikcmclaughlin.dashcam">
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-feature android:name="android.hardware.camera2.full"
-                  android:required="true"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+            android:name="android.hardware.camera2.full"
+            android:required="true"/>
 
     <application
             android:allowBackup="true"
@@ -33,6 +36,11 @@
 
         <service
                 android:name=".RecorderService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+        <service
+                android:name=".DrivingService"
                 android:enabled="true"
                 android:exported="true">
         </service>

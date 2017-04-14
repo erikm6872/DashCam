@@ -6,7 +6,7 @@
             android:fragment="com.erikcmclaughlin.dashcam.SettingsActivity$GeneralPreferenceFragment"
             android:title="@string/pref_header_general"
             android:icon="@drawable/ic_info_black_24dp"/>
-
+<!--
     <header
             android:fragment="com.erikcmclaughlin.dashcam.SettingsActivity$NotificationPreferenceFragment"
             android:title="@string/pref_header_notifications"
@@ -16,5 +16,13 @@
             android:fragment="com.erikcmclaughlin.dashcam.SettingsActivity$DataSyncPreferenceFragment"
             android:title="@string/pref_header_data_sync"
             android:icon="@drawable/ic_sync_black_24dp"/>
+-->
+
+<!--
+    <header
+            android:fragment="com.erikcmclaughlin.dashcam.SettingsActivity$AboutFragment"
+            android:title="About"
+            android:icon="@drawable/ic_info_black_24dp"/>
+-->
 
 </preference-headers>
