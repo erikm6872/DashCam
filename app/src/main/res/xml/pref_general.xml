@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+            android:key="auto_detect_driving"
+            android:title="@string/pref_title_auto_detect"
+            android:summary="@string/pref_description_auto_detect"
+            android:defaultValue="true"/>
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+            android:key="auto_delete"
+            android:title="@string/pref_title_delete_old"
+            android:defaultValue="@string/pref_default_delete_old"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" android:summary="@string/pref_desctiption_delete_old"/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+</PreferenceScreen>
