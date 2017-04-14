@@ -1,6 +1,7 @@
 package com.erikcmclaughlin.dashcam;
 
 import android.R.layout;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -67,6 +68,12 @@ public class VideoList extends AppCompatActivity {
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
             return true;
+        }
+        else if (id == R.id.action_about){
+            AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
+            alertBuilder.setMessage(R.string.about_text).setTitle("About");
+            alertBuilder.create();
+            alertBuilder.show();
         }
         return super.onOptionsItemSelected(item);
     }
