@@ -8,10 +8,12 @@
         android:fitsSystemWindows="true"
         tools:context="com.erikcmclaughlin.dashcam.VideoList">
 
+    <include layout="@layout/content_video_list"/>
+
     <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
             android:fitsSystemWindows="true"
-            android:layout_height="@dimen/app_bar_height"
+            android:layout_height="138dp"
             android:layout_width="match_parent"
             android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -19,7 +21,7 @@
                 android:id="@+id/toolbar_layout"
                 android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="109dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary">
 
@@ -28,20 +30,18 @@
                     android:layout_height="?attr/actionBarSize"
                     android:layout_width="match_parent"
                     app:layout_collapseMode="pin"
-                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+                    app:popupTheme="@style/AppTheme.PopupOverlay" android:elevation="0dp"/>
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_video_list"/>
-
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
-            app:layout_anchor="@id/app_bar"
-            app:layout_anchorGravity="bottom|end"
-            app:srcCompat="@android:drawable/ic_dialog_email"/>
+            app:layout_anchor="@+id/app_bar"
+            app:layout_anchorGravity="bottom|right"
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" app:backgroundTint="@android:color/holo_green_dark"
+            android:layout_gravity="center_vertical|left"/>
 
 </android.support.design.widget.CoordinatorLayout>

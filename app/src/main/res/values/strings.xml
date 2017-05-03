@@ -171,4 +171,8 @@
     <string name="pref_default_delete_old">7</string>
     <string name="pref_desctiption_delete_old">0 keeps all video (warning: eats up storage very quickly)</string>
     <string name="about_text">Erik C. McLaughlin, 2017. https://erikcmclaughlin.com</string>
+
+    <string name="title_activity_camera__preview">Camera_Preview</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

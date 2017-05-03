@@ -3,6 +3,7 @@
           package="com.erikcmclaughlin.dashcam">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature
@@ -44,6 +45,17 @@
                 android:enabled="true"
                 android:exported="true">
         </service>
+
+        <activity
+                android:name=".Camera_Preview"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_camera__preview"
+                android:parentActivityName=".VideoList"
+                android:theme="@style/FullscreenTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.erikcmclaughlin.dashcam.VideoList"/>
+        </activity>
     </application>
 
 </manifest>
