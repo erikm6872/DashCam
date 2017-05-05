@@ -6,6 +6,11 @@
             android:summary="@string/pref_description_auto_detect"
             android:defaultValue="true"/>
 
+    <SwitchPreference
+            android:key="enable_maps_recording"
+            android:title="@string/pref_title_maps_record"
+            android:summary="@string/pref_description_maps_record"
+            android:defaultValue="true"/>
     <!-- NOTE: EditTextPreference accepts EditText attributes. -->
     <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
     <EditTextPreference
